@@ -1,0 +1,11 @@
+name: First Workflow
+on: workflow_dispatch # make sure to manually start the workflow
+jobs:  #it must be jobs not job
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greetings
+        run: echo "Hello, How are you?"
+      - name: Print Goodbye
+        run: echo "Good Night!"
+    
